@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.hambuger{
+    position: relative;
+    display: none;
+    width: 30px;
+    cursor: pointer;
+    
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none; 
+}
+.hambuger .bar, .hambuger:after, .hambuger:before{
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.toggle-mainNav{
+    position: absolute;
+    width: 30px;
+    height: 30%;
+    z-index: 3;
+    cursor: pointer;
+    opacity: 0;
+}
+.mainNavContainer{
+    position: relative;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    margin-left: 20px;
+    height: 40px;
+    background-color: rgba(255, 166, 0, 0.753);
+
+}
+
+.nav_container{
+    margin-top: auto;
+}
+
+a{
+    text-decoration: none;
+    margin: 10px;
+    text-decoration: wavy;
+    
+}
+.stt{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: rgba(165, 42, 42, 0.329);
+    padding: 80px;
+}
+.cakes_display{
+    text-decoration: overline;
+    text-transform: capitalize;
+}
+.mainNavContainer input:checked ~ .nav_container{
+    right: 0;
+    box-sizing: -20px 0 40px rgba(0,0,0,0.3);
+}
+@media screen and (max-width: 992px) {
+    .hambuger,
+    .bar {
+        display: block;
+        
+    }
+
+    .mainNavContainer{
+        padding: 10px 20px;
+        justify-content: flex-end;
+    }
+    .nav_container{
+        justify-content: start;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: -300;
+        background-color: rgba(0, 0, 255, 0.767);
+        width: 250px;
+        height: 400px;
+        padding-top: 65px;
+    }
+    .nav_container a{
+        padding: 20px;
+        font-size: 20px;
+        box-shadow: 0 1px 0 rgb(255, 189, 200)
+        inset;
+        color: white;
+    }
+    /* .mainNavContainer{
+        
+    } */
+
+    /* header{
+        padding: 10px 20px;
+    }
+
+    .mainNavContainer, 
+    .nav_container {
+        justify-content: start;
+        flex-direction: row;
+        top: 0;
+        height: 100%;
+        padding-top: 60px;
+
+    }
+
+    .nav_container,
+    .nav_bar {
+        width: 100%;
+    } */
+
+
+}
