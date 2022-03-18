@@ -2,11 +2,22 @@
     margin: 0;
     padding: 0;
 }
+.logo{
+    align-items: flex-start;
+    margin-right: auto;
 
+   
+}
+.logo img{
+    height: 40px;
+    width: 50px;
+}
 .mainNav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+
 }
 
 .hambuger{
@@ -99,7 +110,9 @@ a{
     margin: 10px;
     text-decoration: wavy;
     
-    
+}
+.mainNavContainer  .mainNav .nav_container a{
+   align-items: center;
 }
 .stt{
     display: flex;
@@ -163,6 +176,11 @@ a{
         inset;
         color: white;
     }
+
+    .logo img{
+        height: 50px;
+        width: 50px;
+       padding-top: 20px;
     /* .mainNavContainer{
         
     } */
